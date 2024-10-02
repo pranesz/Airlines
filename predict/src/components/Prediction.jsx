@@ -48,7 +48,7 @@ const Predictor = () => {
                 </div>
                 <div className="form-group">
                     <label>
-                        Flight Distance:
+                        Flight Distance (1-10000 km):
                         <input
                             type="number"
                             value={flightDistance}

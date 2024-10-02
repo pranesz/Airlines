@@ -1,13 +1,13 @@
 html, body {
-    margin: 0; 
-    height: 100%; 
+    margin: 0;
+    height: 100%;
 }
 
 body {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center; 
-    background-color: rgb(6, 6, 6); 
+    background-color: rgb(0, 0, 0); 
     font-family: 'Georgia', serif; 
 }
 
@@ -15,30 +15,31 @@ body {
     text-align: center;
     color: #3497fa; 
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 24px; 
 }
 
 .predictor-form {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    width: 100%; 
+    width: 90%;
+    max-width: 400px; 
 }
 
 .form-group {
     margin-bottom: 15px;
-    width: 100%;
+    width: 100%; 
 }
 
 .label {
     font-weight: bold;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .input-field {
     width: 100%;
     padding: 10px;
-    border: 1px solid #bdc3c7; 
+    border: 1px solid #bdc3c7;
     border-radius: 4px;
     transition: border-color 0.3s;
 }
@@ -59,23 +60,31 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .submit-button:disabled {
-    background-color: #bdc3c7;
+    background-color: #bdc3c7; 
     cursor: not-allowed;
 }
 
 .submit-button:hover:not(:disabled) {
-    background-color: #21618c;
+    background-color: #3497fa; 
 }
 
 .prediction-container {
-    text-align: right; 
-    color: #2980b9; 
+    text-align: center; 
+    color: #3497fa; 
+    width: 90%;
+    max-width: 400px; 
+    position: absolute; 
+    right: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
 }
+
 
 .prediction {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 18px; 
 }
 
 .error {
@@ -83,3 +92,24 @@ body {
     margin-top: 20px;
     color: #e74c3c; 
 }
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 20px;
+    }
+    
+    .submit-button {
+        font-size: 14px; 
+    }
+    
+    .prediction {
+        font-size: 16px; 
+    }
+    
+    .error {
+        font-size: 16px; 
+    }
+}
+
+
+
