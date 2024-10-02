@@ -16,7 +16,6 @@ def predict():
     features_poly = test_pol.transform(features)
     prediction = grid_load.predict(features_poly)
 
-  
     return jsonify({'prediction': int(prediction[0])})
 
 if __name__ == '__main__':
