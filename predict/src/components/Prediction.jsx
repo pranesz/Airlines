@@ -19,7 +19,7 @@ const Predictor = () => {
         setError(null);
 
         try {
-            const response = await axios.post('http://localhost:5000/api/predict', {
+            const response = await axios.post('https://airlines-customer-satisfication-2.onrender.com', {
                 features: [age, flightDistance, genderMale, cleanliness, legRoomService, departureDelay],
             });
             setPrediction(response.data.prediction);
