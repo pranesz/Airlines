@@ -6,7 +6,6 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)  
 
-
 # Pre_Trained Model
 grid_load = joblib.load('Grid_search_model.pkl')
 test_pol = joblib.load('Test_pol.pkl')
